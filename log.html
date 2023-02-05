@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/1f221b598e.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="mainpage">
+     <!---NAVBAR-->
+        <nav class="navbar navbar-expand-md navbar-dark  ">
+        <div class="container">
+          <a href="log.html" class="navbar-brand text-danger fs-4">NetChina</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse "  id="collapsibleNavbar">
+              <ul class="navbar-nav ms-auto" >
+                  <li class="nav-item"><div class="dropdown" style="margin-right:5px;">
+                    <button class=" btn dropdown-toggle color" type="button" data-toggle="dropdown" style="margin-top: 15px;" >Kategoriler
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu"  >
+                     <li><a href="#popular">Popüler Filmleri</a></li>  
+                     <li><a href="#action">Aksiyon Filmleri</a></li>  
+                     <li><a href="#animated">Animasyon Filmleri</a></li>   
+                     <li><a href="#comedy">Komedi  Filmleri</a></li> 
+                    </ul></div>
+                  </li>
+                  <li class="nav-item" style="margin-top: 10px;" > 
+                    <input id="searchbar"class="bg-dark  text-light" type="text" placeholder="Film Ara...">
+                </li>
+                  
+                  <li class="nav-item" style="margin-top: 10px;" ><div class="dropdown"  >
+                <button class=" btn dropdown-toggle color " type="button" data-toggle="dropdown" ><img class="avatar" src="image/icons8-name-50.png">
+                <span class="caret" style="justify-content: center;align-items: center;"></span></button>
+                <ul class="dropdown-menu"  >
+                 <li><a href="#popular">İzlenilen Filmler</a></li>  
+                 <li><a href="#action">Profil Ayarları</a></li>  
+                 <li><a href="#animated">Kaydedilen Filmler</a></li>   
+                 <li><a href="site.html">Çıkış yap</a></li> 
+                </ul></div></li>
+              </ul> 
+            
+          </div>
+     </nav>
+    </div>
+      <!---SİDEDBAR-->
+     <nav class="sidebar">
+       <a href="log.html"><i class="left-menu-icon fa fa-home"></i></a> 
+       <a href="#"><i class="left-menu-icon fas fa-users"></i></a>
+       <a href="#"><i class="left-menu-icon fas fa-bookmark"></i></a>
+       <a href="choice.html"><i class="left-menu-icon fas fa-shopping-cart"></i></a> 
+     </nav>
+     <!--MOVİE SİDE-->
+     <div class="film">
+       <div class="film-side" id="popular">
+       <!--UP SİDE-->
+         <div class="up-side " id="up-side-1" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/wallpaperbetter.com_1364x768.jpg');" >  <h1 >NetChina</h1>
+            <p class="up-side-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatem distinctio eveniet, odio, omnis officia velit adipisci odit nulla modi corporis repellat suscipit consequuntur aperiam assumenda, ratione asperiores neque dolorum.</p>
+           
+          </div>
+          <div class="up-side" id="up-side-2" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/532658-2001-a-space.jpg');display: none;" >  <h1 >2001 A Space Odyssey</h1>
+            <p class="up-side-desc">2001: Bir Uzay Destanı veya Türkçe gösterim adıyla 2001: Uzay Yolu Macerası (İngilizce: 2001: A Space Odyssey), 1968 yılında Stanley Kubrick tarafından yönetilen bilimkurgu filmi. Filmin bilimkurgu yazarı Arthur C. Clarke'ın kısa bir öyküsünden esinlenen senaryosu, Kubrick ve Clarke tarafından kaleme alınmıştır..</p>
+          
+          </div>
+          <div class="up-side" id="up-side-3" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/217234.jpg');display: none;" >  <h1 >The Godfather</h1>
+            <p class="up-side-desc">Corleone ailesi, Don Vito Corleone'nin başında olduğu, suça dayalı bir örgüt kurmuş olan İtalyan asıllı meşhur bir ailedir. Aile, New York'taki diğer dört aileyle birlikte New York'un yeraltı işlerini yönetmektedir. Ancak Corleone ailesini diğerlerinden ayıran özelliği, Don Corleone'nin cebinde bozuk para gibi taşıdığı politikacılar ve yargıçlardır. Politikacılar ve yargıçlarla olan bu yakın ilişkileri diğer ailelerin açamadığı kapıları açabilmesini sağlamaktadır.</p>
+          
+          </div>
+          <div class="up-side" id="up-side-4" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/wp383267.jpg');display: none;" >  <h1 >Batman Dark Knight</h1>
+            <p class="up-side-desc">Bir çete bankayı soymak için toplanır. Hepsinin de yüzlerinde palyaço maskesi vardır. Çeteden herkes, kendine düşen görevi tamamlayan hırsızı alacağı payı çoğaltmak için öldürür. Bankanın müdürü tüfeğini eline alıp bankasını savunmaya çalışır. Ancak kurşunu bitince hırsızlardan biri tarafından vurulur. En sonunda çeteden iki kişi kalır. Kaçmak için çaldıkları okul otobüsü duvarı yıkar. Hırsızlardan biri ölür. Kalan hırsız, otobüsten çıkan ortağını da vurur. Ardından yerde yatan banka müdürü, Gotham'daki hırsızlarda onur, şeref gibi özellikleri bulunduğunu söyler. Onun yanına giden hırsız maskesini çıkarır. O Joker'dir</p>
+          
+          </div>
+          
+        
+          <div class="up-side" id="up-side-5" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/1046291.jpg');display: none;" >  <h1 >Joker</h1>
+            <p class="up-side-desc">Kalabalık içinde bile her an yalnız Arthur Fleck bağ kurma arayışındadır. Yine de, Gotham şehrinin isli sokaklarında yürürken; bölünme ve hoşnutsuzluğun düşmanca bir yer hâline getirdiği şehrin, üzeri grafitilerle dolu toplu taşıtlarına binerken, Arthur yüzünde iki maskeyle dolaşır. Bunlardan birincisi gündüz işi için yüzüne çizdiği palyaço suratıdır. Diğeri ise asla silip çıkaramayacağı bir maskedir.</p>
+          </div>
+          <div class="up-side" id="up-side-6" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/HD-wallpaper-the-lord-of-the-rings-the-two-towers.jpg');display: none;width: 100%;" >  <h1 >Yüzüklerin Efendisi 2 Kule</h1>
+            <p class="up-side-desc">Yüzüklerin Efendisi: İki Kule (İngilizce: The Lord of the Rings: The Two Towers), J. R. R. Tolkien'nin İki Kule adlı kitabından uyarlanmış ve Peter Jackson tarafından yönetilmiş 2002 yılında gösterime giren fantezi filmidir. Filmin olay örgüsünde, Frodo ve Sam'in yüzüğü yok etmek için Mordor'a giderken onun eski sahibi Gollum ile tanışmaları, Aragorn, Legolas, ve Gimli'nin Gandalf'ın dirilişi ile birlikte Rohan'ı savunmaya gitmesi ve Merry ile Pippin'in tutsaklıktan kaçmalarından sonra bir Ent olan Treebeard ile tanışmaları olmak üzere üç hikâye anlatıldı.</p>
+          </div>
+
+          <div class="up-side" id="up-side-7" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/330px-Zodiac32432.jpg');display: none;" >  <h1 >Zodiac</h1>
+            <p class="up-side-desc">Zodiac'ın ikinci cinayeti işlemesi ile başlanan filmde aynı zamanda Graysmith San Francisco'da çalışmaya başlar. Cinayetler devam eder ancak polis herhangi bir ipucuna ulaşamamaktadır. Kurbanlar rastgele seçilmekte ve rastgele yerlerde öldürülmektedirler. Bir müddet sonra da gazetelere Zodiac imzası ile mektuplar gelmeye başlar.</p>
+          </div>
+          <div class="up-side" id="up-side-8" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/3_idiots_poster.jpg');display: none;" >  <h1 >3 Aptal</h1>
+            <p class="up-side-desc">Film Hindistan'ın en iyi mühendislik okulundaki üç arkadaşın dostluklarını ve hayatını anlatırken eğitim sistemini eleştirmektedir. Hindistan'da tüm zamanların (kendi yılına kadar) en yüksek gişe rekoru ve hasılatını yapan filmidir. Daha önce yine bir Aamir Khan filmi olan Ghajini tarafından elde edilen en yüksek gişe rekoru, bu film ile kırılmıştır. Film, yurt dışı pazarında da o tarihe kadar en yüksek hasılat yapan bollywood filmidir.[6] Filmin başrol oyuncuları: Aamir Khan, Kareena Kapoor, Sharman Joshi, Boman Irani ve Madhavan'dır. Olay Raju, Farhan ve Rancho ile olan arkadaşlığını anlatan bir film</p>
+          </div>
+          <div class="up-side" id="up-side-9" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/Blade_Runner_\(1982_poster\).png');display: none;" >  <h1 >Blade Runner</h1>
+            <p class="up-side-desc">Film, 2019 yılında Los Angeles şehrinde geçer. Tyrell Şirketi'nin ürettiği replicantlar (kopya) köle gibi çalıştırılmaktan bıkıp Dünya dışı bir gezegende isyan yapar. Bir uzay gemisine binip Dünya'ya gelirler. Sorun çıkaran replicantları bulup öldürmek için çalışan "Bıçak Koşucuları" adlı polis birimi, isyancı replicantları bulmak için Holden'ı görevlendirir. Holden, replicantları insanlardan ayırt etmeye yarayan Voight-Kampff testi ile onları bulmaya çalışır. Testi Leon Kowalski'nin üzerinde uygular. Kowalski bundan rahatsız olup onu öldürür.. </p>
+          </div>
+          <div class="up-side" id="up-side-10" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/Avengers_Age_of_Ultron_poster.jpg');display: none;" >  <h1 >Yenilmezler Ultron Çağı</h1>
+            <p class="up-side-desc">Yenilmezler (İngilizce: The Avengers), bazı ülkelerde Avengers Assemble olarak da bilinmektedir. Marvel Studios tarafından üretilen ve Marvel Comics'in süper kahraman ekibidir. Dağıtımını Wss Whedon yazıp yönetmiştir. Ayrıca altıncı Marvel Sinematik Evreni filmi olup 1. Evre'nin kapanış filmidir. Ayrıca film dünyada en çok hasılat yapan 6. film unvanını 1.5 milyar $ ile elinde bulundurmaktadır.</p>
+          </div>
+        
+        
+        
+
+ 
+        <!--MİDDLE SİDE-->
+          <div class="movie-list-container" >
+             <h1 class="movie-list-title" >Popüler film</h1>
+             <div class="movie-list-wrapper">
+              <div class="movie-list">
+                <div class="movie-list-item" id="2001">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/532658-2001-a-space.jpg">
+                    <p class="movie-list-item-title">2001 A Space Odyssey</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="godFather">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/217234.jpg">
+                    <p class="movie-list-item-title">The Godfather</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="BatmanDark">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/wp383267.jpg">
+                    <p class="movie-list-item-title">Batman Dark Knight</p>
+                  </a>
+                </div>
+                <div class="movie-list-item " id="joker">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img " src="image/1046291.jpg">
+                    <p class="movie-list-item-title">Joker</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="lordOfTheRings2">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/330px-YüzüklerinEfendisi'İkiKule-film.jpg">
+                    <p class="movie-list-item-title">Yüzüklerin Efendisi 2 Kule</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="zodiac">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/330px-Zodiac32432.jpg">
+                    <p class="movie-list-item-title">Zodiac</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="idiots">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/3_idiots_poster.jpg">
+                    <p class="movie-list-item-title">3 Aptal</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="bladeRunner">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/Blade_Runner_(1982_poster).png">
+                    <p class="movie-list-item-title">Blade Runner</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="avengers">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/Avengers_Age_of_Ultron_poster.jpg">
+                    <p class="movie-list-item-title">Yenilmezler Ultron Çağı</p>
+                  </a>
+                </div>
+                
+
+              </div>
+              <i class="fas fa-chevron-right arrow"></i>  
+              <i class="fas fa-chevron-left arrow1"></i>
+             </div>
+          </div>
+          
+       </div> 
+       <!--2. UP SİDE-->
+       <div class="film-side"  id="action">
+       
+         <div class="up-side " id="up-side-11" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/HD-wallpaper-the-lord-of-the-rings-the-two-towers.jpg');" >  <h1 >Yüzüklerin Efendisi 2 Kule</h1>
+            <p class="up-side-desc">Yüzüklerin Efendisi: İki Kule (İngilizce: The Lord of the Rings: The Two Towers), J. R. R. Tolkien'nin İki Kule adlı kitabından uyarlanmış ve Peter Jackson tarafından yönetilmiş 2002 yılında gösterime giren fantezi filmidir. Filmin olay örgüsünde, Frodo ve Sam'in yüzüğü yok etmek için Mordor'a giderken onun eski sahibi Gollum ile tanışmaları, Aragorn, Legolas, ve Gimli'nin Gandalf'ın dirilişi ile birlikte Rohan'ı savunmaya gitmesi ve Merry ile Pippin'in tutsaklıktan kaçmalarından sonra bir Ent olan Treebeard ile tanışmaları olmak üzere üç hikâye anlatıldı.</p>
+           
+          </div>
+          <div class="up-side" id="up-side-12" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/1137808.jpg-r_654_368-f_jpg-q_x-xxyxx.jpg');display: none;" >  <h1 >Örümcek Adam Eve Dönüş Yok</h1>
+            <p class="up-side-desc">2001: Bir Uzay Destanı veya Türkçe gösterim adıyla 2001: Uzay Yolu Macerası (İngilizce: 2001: A Space Odyssey), 1968 yılında Stanley Kubrick tarafından yönetilen bilimkurgu filmi. Filmin bilimkurgu yazarı Arthur C. Clarke'ın kısa bir öyküsünden esinlenen senaryosu, Kubrick ve Clarke tarafından kaleme alınmıştır..</p>
+          
+          </div>
+          <div class="up-side" id="up-side-13" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/wallpapersden.com_extraction-movie_2560x1080.jpg');display: none;" >  <h1 >Extraction</h1>
+            <p class="up-side-desc">Paralı asker Tyler Rake, Hindistan'ın en büyük uyuşturucu kaçakçısının kaçırılan oğlu Ovi Mahajan'ı Dakka, Bangladeş'ten kurtarmak için görevlendirilir. Ovi'yi kurtardıktan sonra şehrin en büyük uyuşturucu efendisi Amir şehri kilit altına alma çağrısı yapar. Tyler artık her adımında düşmanla burun buruna gelecektir. Yol boyunca Tyler küçük yaşta kaybettiği oğlu aklında canlanır ve Ovi'ye karşı bir yakınlık hisseder. Ovi'nin babasının sağ kolu Saju fidye parasını ödemekten kaçınmak için çocuğu tek başına kurtarmaya çalışır.</p>
+          
+          </div>
+          <div class="up-side" id="up-side-14" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/1178893.jpg');display: none;" >  <h1 >6 Underground</h1>
+            <p class="up-side-desc">Ölmüş numarası yapan teknoloji milyarderi, zalim bir diktatörü alaşağı edecek cüretkâr ve kanlı bir görev için uluslararası ajanlardan oluşan bir grup kurar. Canınız neyi isterse izleyin. Michael Bay imzalı bu heyecan dolu aksiyon gerilimde, Ryan Reynolds uluslararası bir kanunsuzlar ekibini yönetiyor.</p>
+          
+          </div>
+          
+        
+          <div class="up-side" id="up-side-15" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/2776321.jpg');display: none;" >  <h1 >Tenet</h1>
+            <p class="up-side-desc">Tenet, dünyayi büyük bir tehlikeden kurtarmak için savasan bir kahramanin hikayesini konu ediniyor. Gerçek zamanın ötesinde bir yerde, uluslararası casusluk görevini yerine getirmeye çalışan bir kahraman, dünyayı kurtarabilmek için savaşmak zorunda kalır.</p>
+          </div>
+          <div class="up-side" id="up-side-16" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/HD-wallpaper-the-lord-of-the-rings-the-two-towers.jpg');display: none;width: 100%;" >  <h1 >Yüzüklerin Efendisi 2 Kule</h1>
+            <p class="up-side-desc">Yüzüklerin Efendisi: İki Kule (İngilizce: The Lord of the Rings: The Two Towers), J. R. R. Tolkien'nin İki Kule adlı kitabından uyarlanmış ve Peter Jackson tarafından yönetilmiş 2002 yılında gösterime giren fantezi filmidir. Filmin olay örgüsünde, Frodo ve Sam'in yüzüğü yok etmek için Mordor'a giderken onun eski sahibi Gollum ile tanışmaları, Aragorn, Legolas, ve Gimli'nin Gandalf'ın dirilişi ile birlikte Rohan'ı savunmaya gitmesi ve Merry ile Pippin'in tutsaklıktan kaçmalarından sonra bir Ent olan Treebeard ile tanışmaları olmak üzere üç hikâye anlatıldı.</p>
+          </div>
+
+          <div class="up-side" id="up-side-17" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/689466.jpg');display: none;" >  <h1 >wanted</h1>
+            <p class="up-side-desc">Sıradan bir adam olan Wesley, öldürülen babasının gizli bir suikastçı birliğinden olduğunu öğrenince doğuştan gelen öldürme içgüdülerini kullanarak intikam meleğine dönüşür. Canınız neyi isterse izleyin. Çizgi roman serisinden uyarlanan bu aksiyon gerilimde Angelina Jolie, James McAvoy ve Morgan Freeman başrollerde.</p>
+          </div>
+          <div class="up-side" id="up-side-18" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/4982229.jpg');display: none;" >  <h1 >Triple Frontier</h1>
+            <p class="up-side-desc">Özel kuvvetler eski mensubu beş arkadaşın Güney Amerikalı bir uyuşturucu baronunu devirmek için tekrar bir araya gelmesi, istenmeyen bir dizi sonucu beraberinde getirir. Canınız neyi isterse izleyin. Ben Affleck, Oscar Isaac ve Charlie Hunnam başrolde.</p>
+          </div>
+
+           <!--2. MİDDLE SİDE-->
+          <div class="movie-list-container">
+             <h1 class="movie-list-title">Aksiyon Filmleri</h1>
+             <div class="movie-list-wrapper">
+              <div class="movie-list">
+                <div class="movie-list-item" id="spider">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/1137808.jpg-r_654_368-f_jpg-q_x-xxyxx.jpg">
+                    <p class="movie-list-item-title">Örümcek Adam Eve Dönüş Yok</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="extraction">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/wallpapersden.com_extraction-movie_2560x1080.jpg">
+                    <p class="movie-list-item-title">Extraction</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="6underGround">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/1178893.jpg">
+                    <p class="movie-list-item-title">6 Underground</p>
+                  </a>
+                </div>
+                <div class="movie-list-item " id="tenet">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img " src="image/2776321.jpg">
+                    <p class="movie-list-item-title">Tenet</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="lordOfTheRings22">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/330px-YüzüklerinEfendisi'İkiKule-film.jpg">
+                    <p class="movie-list-item-title">Yüzüklerin Efendisi 2 Kule</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="wanted">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/689466.jpg">
+                    <p class="movie-list-item-title">wanted</p>
+                  </a>
+                </div>
+                <div class="movie-list-item" id="tripleFrontier">
+                  <a href="movie.html">
+                    <img class="movie-list-item-img" src="image/4982229.jpg">
+                    <p class="movie-list-item-title">Triple Frontier</p>
+                  </a>
+                </div>
+            
+                
+
+              </div>
+              <i class="fas fa-chevron-right arrow"></i>  
+              <i class="fas fa-chevron-left arrow1"></i>
+             </div>
+          </div>
+          
+       </div>
+       <div class="film-side" id="animated">
+       <!--3. UP SİDE-->
+        <div class="up-side " id="up-side-19" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/kung-fu-panda-4k-00-1920x1080.jpg');" >  <h1 >Kung Fu Panda</h1>
+           <p class="up-side-desc">Panda Po, kung fu hayranıdır. Ancak ailesine ait makarna restoranında çalışır ve bu spora pek yatkın sayılmaz. Hiç beklemediği bir anda eski bir kehanetin gereğini yerine getirmek için görevlendirilince Po’nun hayalleri gerçeğe dönüşür. O artık efsanevi Korkusuz Beşli’nin yanında kung fu dünyasına katılmıştır. Kung fu ustası Shifu’nun, Kaplan, Turna, Mantis, Engerek Yılanı ve Maymun ile yan yana dövüşme fırsatını bulmuştur. Ancak Tai Lung’un cezaevinden kaçarak önlerine çıkması üzerine Barış Vadisi halkını yaklaşan tehlikeye karşı savunmak Po’ya kalacaktır.</p>
+          
+         </div>
+         <div class="up-side" id="up-side-20" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/813519.jpg');display: none;" >  <h1 >Shrek</h1>
+           <p class="up-side-desc">Şrek bataklıkta yalnız yaşayan ve yakındaki köy halkının korktuğu yeşil bir devdir. Bir gün evine döndüğünde bütün masal kahramanlarının bataklığına toplandığını görür. Onları kovmaya çalışsa da beceremez. Sonunda pes edip niye buraya geldiklerini ve ne yaparsa gideceklerini sorar. Onlar da Duloc kralı Lord Farquaad'ın kendilerini öldürmek istediğini ve ancak Şrek'in onu vazgeçirebileceğini söylerler. Şrek, bunun üzerine o gün hayatını kurtardığı ve o andan itibaren hep peşinde dolanan geveze Eşek'le birlikte Lord Farquaad'ın bulunduğu Duloc Krallığı'na doğru yola koyulu</p>
+         
+         </div>
+         <div class="up-side" id="up-side-21" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/kung-fu-panda-4k-00-1920x1080.jpg');display: none;" >  <h1 >Kung Fu Panda</h1>
+           <p class="up-side-desc">Panda Po, kung fu hayranıdır. Ancak ailesine ait makarna restoranında çalışır ve bu spora pek yatkın sayılmaz. Hiç beklemediği bir anda eski bir kehanetin gereğini yerine getirmek için görevlendirilince Po’nun hayalleri gerçeğe dönüşür. O artık efsanevi Korkusuz Beşli’nin yanında kung fu dünyasına katılmıştır. Kung fu ustası Shifu’nun, Kaplan, Turna, Mantis, Engerek Yılanı ve Maymun ile yan yana dövüşme fırsatını bulmuştur. Ancak Tai Lung’un cezaevinden kaçarak önlerine çıkması üzerine Barış Vadisi halkını yaklaşan tehlikeye karşı savunmak Po’ya kalacaktır.</p>
+         
+         </div>
+         <div class="up-side" id="up-side-22" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/19575346_1962577797305053_7016572073822925728_o.png');display: none;" >  <h1 >Boss Baby</h1>
+           <p class="up-side-desc" >Filmde evde tek çocuk olan Tim ailesi ile birlikte güzel bir hayat sürmektedir. Hayali köpek sahibi olmak olan Tim köpek beklerken ailesi yeni bir bebek evlat edinmeye karar verirler. Eve yeni gelen bebek takım elbiseli ve oldukça garip bir kişiliktedir. Evde ailenin yeni odağı olan bebek Tim’ in geri planda kalmasına sebep olmuştur. Ancak yeni gelen kardeş tuhaf hareketler sergilemektedir. Kimse yokken oldukça akıcı konuşabilmekte diğer bebeklerle toplantılar yapmaktadır. Baby Corp için çalışan Patron Bebek aslında köpek şirketi için karşı ajanlık yapan bir casus olarak karşımıza çıkar.</p>
+         
+         </div>
+         
+       
+         <div class="up-side" id="up-side-23" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/cizmeli-kedi-temasi_3_1440x900.jpg');display: none;" >  <h1 >Çizmeli Kedi</h1>
+           <p class="up-side-desc">Bir değirmencinin ölürken değirmenini büyük oğluna, eşeğini ortanca oğluna, kedisini küçük oğluna bırakmıştır. Elinden hiçbir iş gelmeyen delikanlı kediyle ne yapacağını bilemez. Ancak kedi dile gelir, ona yardım edeceğini söyler. Bir çift çizme ve bir torba ister.Evden uzaklaşan kedi, bir tepenin yamacında ölü taklidi yapar ve torbasına koyduğu havuçla şalgamı yemeye gelen tavşanı boğar. Saraya gidip tavşanı Efendisi Karabas Markisi’nin armağanı olarak krala sunar. Çizmeli kedi, uzun süre bu şekilde krala armağan götürmeyi sürdürür.</p>
+         </div>
+         <div class="up-side" id="up-side-24" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/wp2075263-toy-story-hd-wallpapers.jpg');display: none;width: 100%;" >  <h1 >Toys</h1>
+           <p class="up-side-desc">Buzz Lightyear adlı yeni çıkan oyuncak, Andy'e hediye edilir. Oyuncağı çok seven Andy, eski gözdesi Şerif Woody'e olan ilgisini yitirir. Bir gün Buzz yanlışlıkla pencereden aşağı uçunca, herkes Woody'nin onu öldürdüğüne inanır. Woody, kendisini kurtarabilmek için Buzz'ın arkasından giderek onu geri getirmeye karar verir. Fakat ikiliyi dış dünyada büyük tehlikelerle dolu maceralar beklemektedir.</p>
+         </div>
+
+         <div class="up-side" id="up-side-25" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/dfi7hfk-eb4f8990-8c3b-4e34-b4b6-96200b87dcec.jpg');display: none;" >  <h1 >Sonic Prime</h1>
+           <p class="up-side-desc">Kirpi Sonic, peşine düşen yetkililerden kurtulup, şeytani doktorun elinde bulunan yüzükleri geri almaya çalışan Sonic'in hikayesini konu ediyor. Hükümet, insan biçiminde bir kirpi olan Sonic’i yakalamak için peşine düşer. Devlet görevlileri her yerde Sonic’i aramaya başlar. Sonic ise bu sırada şeytani Dr Eggman’ın ele geçirdiği yüzükleri geri almaya çalışmaktadır. Küçük bir kasaba olan Green Hills’in şerifi Tom Wachowski, Sonic’in peşine düşen hükümet yetkililerinden kaçmayı başarıp, doktordan yüzükleri geri alabilmesi için yardım etmeye karar verir. Ancak bu sandığı kadar kolay olmayacaktır.</p>
+         </div>
+         <div class="up-side" id="up-side-26" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/madagascar-2-hd-wallpaper-wallpaper-preview.jpg');display: none;" >  <h1 >Madagaskar</h1>
+           <p class="up-side-desc">New York'ta bir hayvanat bahçesinde başlayan filmde zebra Marty yapay hayvanat bahçesi ortamında bunalıp doğaya geri dönmek istemektedir. Arkadaşları olan aslan Alex, zürafa Melman ve hipopotam Gloria her ne kadar Marty'yi durdurmaya çalışsalar da Marty kaçmanın bir yolunu bulur. Sonra birden kendilerini Doğada bulurlar.Bu sefer de yolculuk sırasında penguenler kafeslerinden kurtulurlar ve gemiyi kaçırıp Antarktika'ya yöneltmeye çalışırlar. Ancak hayvanların bulunduğu kutular denize düşer ve kendilerini Madagaskar adasında bulurlar.Ama oradan çıkamamışlardır.</p>
+         </div>
+         <div class="up-side" id="up-side-27" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/6hAAq3GUWMwD0yJpvBBnpJpCs3d.jpg');display: none;" >  <h1 >LEGO Ninjago: Spinjitzu'nun Ustaları</h1>
+          <p class="up-side-desc">Genç Lloyd namı değer Yeşil Ninja, hepsi gizli savaşçı olan LEGO Yapım Ustaları arkadaşları ve Kung Fu ustası Wu ile birlikte dünyanın en kötü adamı savaş lordu, aynı zamanda Lloyd'un babası olan Garmadon'a karşı savaşmak zorundalar. Mekanikler mekaniklere , babalar oğullara karşı savaşıyor. Bu destansı mücadele onların kızgınlıklarını test edecek ama modern zamanın disiplinsiz ninjaları da bu sırada egolarından uzaklaşıp birlikte hareket etmeyi ve içlerindeki gerçek gücü ortaya çıkarmayı öğrenmelidirler.
+          </p>
+        </div>
+        <div class="up-side" id="up-side-28" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/how-to-train-your-dragon-hd.jpg');display: none;" >  <h1 >How to Train Your Dragon</h1>
+          <p class="up-side-desc">Ejderhanı Nasıl Eğitirsin'de, ejderhalar Berk Adası'nı kendilerine mesken seçmişlerdir. Senelerce acımasız mahlukat tarafından yağmalanan talihsiz adanın biçare yerlileri için hayvanlarını çalıp evlerini yakan bu ejderhaları tepelemek bir nevi namus borcudur. Yetişkinlik çağına erişen genç erkeklerin yapması gereken tek şey bir ejderhayı öldürmektir. Zamanı geldiğinde köyün şefinin tuhaf oğlu Hiccup, icat ettiği tuhaf mekanizmalı silahı bir yaratığa doğrultarak onu öldürmeye yeltenir. Nadir bir türe ait olan bu ejderhayı bir türlü öldüremeyen Hiccup, hayvanı ormana götürerek serbest bırakır. Sonrasında ise aralarında sadakat ve içtenlik barındıran bir arkadaşlık gelişir.</p>
+        </div>
+        <div class="up-side" id="up-side-29" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/1120877.jpg');display: none;" >  <h1 >Shrek 2</h1>
+          <p class="up-side-desc">Mutlu bir yuva kuran ikili, Fiona'nın anne ve babasından bir yemek daveti aldıklarında büyük bir maceraya atılır. Şrek'in tüm ısrarlarına rağmen yemeğe gitmek zorunda kalan ikili, saraya vardıklarında herkesi şaşkınlığa düşürür, çünkü Fiona'nın anne ve babası, damatlarının bir ogre olduğundan habersizdir!</p>
+        </div>
+
+          <!--3. MİDDLE SİDE-->
+         <div class="movie-list-container">
+            <h1 class="movie-list-title">Animasyon Filmleri</h1>
+            <div class="movie-list-wrapper">
+             <div class="movie-list">
+               <div class="movie-list-item" id="shrek">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/813519.jpg">
+                   <p class="movie-list-item-title">Shrek</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="kungFu">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/kung-fu-panda-4k-00-1920x1080.jpg">
+                   <p class="movie-list-item-title">Kung Fu Panda</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="bossBaby">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/19575346_1962577797305053_7016572073822925728_o.png">
+                   <p class="movie-list-item-title">Boss Baby</p>
+                 </a>
+               </div>
+               <div class="movie-list-item " id="cizmeli">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img " src="image/cizmeli-kedi-temasi_3_1440x900.jpg">
+                   <p class="movie-list-item-title">Çizmeli Kedi</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="toys">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/wp2075263-toy-story-hd-wallpapers.jpg">
+                   <p class="movie-list-item-title">Toys</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="sonic">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/dfi7hfk-eb4f8990-8c3b-4e34-b4b6-96200b87dcec.jpg">
+                   <p class="movie-list-item-title">Sonic Prime</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="madagaskar">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/madagascar-2-hd-wallpaper-wallpaper-preview.jpg">
+                   <p class="movie-list-item-title">Madagaskar</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="lego">
+                <a href="movie.html">
+                  <img class="movie-list-item-img" src="image/6hAAq3GUWMwD0yJpvBBnpJpCs3d.jpg">
+                  <p class="movie-list-item-title">LEGO Ninjago: Spinjitzu'nun Ustaları</p>
+                </a>
+              </div>
+              <div class="movie-list-item" id="dragon">
+                <a href="movie.html">
+                  <img class="movie-list-item-img" src="image/how-to-train-your-dragon-hd.jpg">
+                  <p class="movie-list-item-title">How to Train Your Dragon</p>
+                </a>
+              </div>
+              <div class="movie-list-item" id="shrek2">
+                <a href="movie.html">
+                  <img class="movie-list-item-img" src="image/1120877.jpg">
+                  <p class="movie-list-item-title">Shrek 2</p>
+                </a>
+              </div>
+           
+               
+
+             </div>
+             <i class="fas fa-chevron-right arrow"></i>  
+             <i class="fas fa-chevron-left arrow1"></i>
+            </div>
+         </div>
+      </div> 
+      <div class="film-side" id="comedy">
+             <!--4. UP SİDE-->
+        <div class="up-side " id="up-side-30" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/despicable-me-hitman-minions-wallpaper-preview.jpg');" >  <h1 >Çılgın Hırsız 3</h1>
+           <p class="up-side-desc">Gru, insanlığı tehdit eden son kötüyü ele geçirmekte başarısız olunca Anti-Kötüler Birliği’nden kovulur. Artık büyük bir kimlik krizinin ortasındadır. Ancak, gizemli bir yabancı ortaya çıkar ve Gru’ya uzun zaman önce kaybettiği ikiz erkek kardeşinin haberini verir. Kardeşi, ikizinin çılgın adımlarını umutsuzca takip etmek isterken eski bir süper kötü de kötü olmanın ne kadar iyi bir his olduğunu yeniden keşfedecektir.</p>
+          
+         </div>
+         <div class="up-side" id="up-side-31" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/134863.jpg');display: none;" >  <h1 >Hangover</h1>
+           <p class="up-side-desc">Phil, Stu, Alan ve Doug, Stu’nun düğünü için Bangkok'a giderler. Las Vegas’taki bekarlığa veda partisinden sonra Stu işini şansa bırakmayıp sakin bir düğün öncesi kahvaltısı yapmayı tercih eder. Doug’un bekarlığa veda patisindeki gibi olaylar olmasın diye bekarlığa veda partisi yapılmaması kararını alır. Bu karar diğer üçlüyü pek memnun etmese de en yakın arkadaşlarının bu dileğini yerine getirirler. Büyük günden 2 gece önce sahilde bir bira içmeye karar verirler. Fakat bazı şeyler ters gider. </p>
+         
+         </div>
+         <div class="up-side" id="up-side-32" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/recepivedik2.jpg');display: none;" >  <h1 >Recevp İvedik 2</h1>
+           <p class="up-side-desc">Recep'in tek yakını, kıllı, yaşlı ve zamanını PlayStation oynayarak geçiren babaannesidir. Babaannesi Recep'in yaşadığı sarhoş, aylak ve avare hayatı bırakıp iş bulmasını, evlenmesini ve saygınlık kazanmasını ister. Recep babaannesinin isteklerini yerine getirmek için harıl harıl iş aramaktadır. Recep İvedik her işe gider, gittiği işlerde de ortalığı birbirine katar. Kuzeni Hakan'ın yakın çevresi çok geniş olduğu için sahip olduğu iş yerinde ona yeni bir iş verir. Torpilli Recep, bir yandan iş yerinde çeşitli maceralar yaşarken bir yandan da işi öğrenecektir</p>
+         
+         </div>
+         <div class="up-side" id="up-side-33" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/593384.jpg');display: none;" >  <h1 >Aykut Enişte 2</h1>
+           <p class="up-side-desc" >Aykut ile Gülşah evlilik hazırlığındadır. Gülşah'ı elinden kaçırmamaya kararlı olan Aykut, sevdiği kadınla evlenip, Atabeyoğlu Ailesi’nin damadı olacağı için oldukça heyecanlıdır. Ancak beklenmedik bir durum tüm planların alt üst olmasına neden olur. Ailenin eski eniştesi olan Talat'ın düğünden birkaç gün önce ortaya çıkması, tüm işleri karıştırır. İyi niyeti ve saflığı nedeniyle başına açılan belalardan kurtulmaya çalışan Aykut, Gülşah ile evlenmeyi başarabilecek midir?</p>
+         
+         </div>
+         
+       
+         <div class="up-side" id="up-side-34" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/8526944.jpg');display: none;" >  <h1 >Hangover</h1>
+           <p class="up-side-desc">Filmde, bekârlığa veda partisi için Las Vegas'a giden ve kaldıkları otelde geçirdikleri gecenin ardından hiçbir şey hatırlamayan dört arkadaşın başından geçen olaylar anlatılmaktadır. Film yapımcılarının başından geçen olaylardan esinlenerek oluşturulan film, ABD'de, 5 Haziran 2009'da vizyona girdi. 467.416.722 dolarlık hasıla elde eden Felekten Bir Gece, Altın Küre'de, müzikal veya komedi dalında en iyi film ödülü dahil birçok ödül kazandı.</p>
+         </div>
+         <div class="up-side" id="up-side-35" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/desktop-wallpaper-red-notice-netflix.jpg');display: none;width: 100%;" >  <h1 >Red Notice</h1>
+           <p class="up-side-desc">Dünyanın en çok aranan sanat eseri hırsızı ve onun peşindeki FBI profil uzmanı, daima bir adım önde olan kurnaz bir soyguncuyu yakalamak için gönülsüzce suç ortağı olur.</p>
+         </div>
+
+         <div class="up-side" id="up-side-36" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/1320467-Bob-MinionsMinions-The-Rise-Of-Gru-HD-Wallpaper.jpg');display: none;" >  <h1 >Minions</h1>
+           <p class="up-side-desc">Genç asi Stuart ve sevimli minik Bob ile birlikte kardeşlerinin izinden gideceği kötü bir patron bulmak üzere işe koyulacaklardır. Üçlü, sonunda kendilerini yeni potansiyel efendileri, dünyanın ilk dişi süper kötüsü olan Scarlet Overkill'e götürecek olan heyecan dolu bir yolculuğa çıkarlar.</p>
+         </div>
+         <div class="up-side" id="up-side-37" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/despicable-me-hitman-minions-wallpaper-preview.jpg');display: none;" >  <h1 >Çılgın Hırsız 3</h1>
+           <p class="up-side-desc">Gru, insanlığı tehdit eden son kötüyü ele geçirmekte başarısız olunca Anti-Kötüler Birliği’nden kovulur. Artık büyük bir kimlik krizinin ortasındadır. Ancak, gizemli bir yabancı ortaya çıkar ve Gru’ya uzun zaman önce kaybettiği ikiz erkek kardeşinin haberini verir. Kardeşi, ikizinin çılgın adımlarını umutsuzca takip etmek isterken eski bir süper kötü de kötü olmanın ne kadar iyi bir his olduğunu yeniden keşfedecektir.</p>
+         </div>
+         <div class="up-side" id="up-side-38" style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url('image/gerçek-kahraman-728x410.jpg');display: none;" >  <h1 >Gerçek Kahraman </h1>
+          <p class="up-side-desc">Ryan Reynolds'ın başrolünde yer aldığı Free Guy, hayata fazlaca pozitif bakan banka memuru Guy'ın, rutin bir şekilde gerçekleşen banka soygunlarından biri esnasında, bir açık dünya video oyununda NPC (Oyuncular tarafından oynanmayan karakter) olduğunu keşfetmesiyle gelişen olayları konu ediniyor. Sanal dünya oyununda bir arka plan oyuncusu olduğunu keşfeden banka memuru Guy, kendi hikayesinin kahramanı olmaya ve hayatını yeniden yazmaya karar verir. Sınırların olmadığı bir dünyada, çok geç olmadan artık kendi dünyasını kurtaran bir adam olmaya kararlıdır.
+          </p>
+        </div>
+        
+           <!--4. MİDDLE SİDE-->
+         <div class="movie-list-container">
+            <h1 class="movie-list-title">Komedi Filmleri</h1>
+            <div class="movie-list-wrapper">
+             <div class="movie-list">
+               <div class="movie-list-item" id="hangover2">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/134863.jpg">
+                   <p class="movie-list-item-title">Hangover 2</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="ivedik">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/recepivedik2.jpg">
+                   <p class="movie-list-item-title">Recep İvedik</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="eniste">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/593384.jpg">
+                   <p class="movie-list-item-title">Aykut Enişte 2</p>
+                 </a>
+               </div>
+               <div class="movie-list-item " id="hangover">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img " src="image/8526944.jpg">
+                   <p class="movie-list-item-title">Hangover</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="red">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/desktop-wallpaper-red-notice-netflix.jpg">
+                   <p class="movie-list-item-title">Red Notice</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="minions">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/1320467-Bob-MinionsMinions-The-Rise-Of-Gru-HD-Wallpaper.jpg">
+                   <p class="movie-list-item-title">Minions</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="hirsiz">
+                 <a href="movie.html">
+                   <img class="movie-list-item-img" src="image/despicable-me-hitman-minions-wallpaper-preview.jpg">
+                   <p class="movie-list-item-title">Çılgın Hırsız 3</p>
+                 </a>
+               </div>
+               <div class="movie-list-item" id="hero">
+                <a href="movie.html">
+                  <img class="movie-list-item-img" src="image/gerçek-kahraman-728x410.jpg">
+                  <p class="movie-list-item-title">Gerçek Kahraman</p>
+                </a>
+              </div>
+             
+           
+               
+
+             </div>
+             <i class="fas fa-chevron-right arrow"></i>  
+             <i class="fas fa-chevron-left arrow1"></i>
+            </div>
+         </div>
+      </div> 
+     </div>
+     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+     <script src="site.js"></script>
+</body>
+</html>
